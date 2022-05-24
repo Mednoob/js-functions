@@ -5,8 +5,7 @@ function dashOddNumbers(num) {
   const abs = Math.abs(num);
   if (isNaN(abs)) return 'NaN';
 
-  const matches = abs.toString().match(/[02468]+|[13579]/g);
-  return (matches ? matches : []).join("-");
+  return (abs.toString().match(/[02468]+|[13579]/g) || []).join("-");
 }
 
 console.log(dashOddNumbers(3465));
