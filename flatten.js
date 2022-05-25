@@ -1,4 +1,4 @@
-// Flatten an iterables(array, string) / object
+// Flatten an iterable(array, string) / object
 
 function flatten(obj) {
     const newObj = {};
