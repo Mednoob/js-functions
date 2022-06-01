@@ -8,4 +8,7 @@ function dashOddNumbers(num) {
   return (abs.toString().match(/[02468]+|[13579]/g) || []).join("-");
 }
 
+// one-line
+const dashOddNumbers = num => isNaN(num) ? "NaN" : (`${Math.abs(num)}`.match(/[02468]+|[13579]/g) || []).join("-");
+
 console.log(dashOddNumbers(3465));
