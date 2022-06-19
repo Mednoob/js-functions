@@ -10,5 +10,6 @@ function dashOddNumbers(num) {
 
 // one-line
 const dashOddNumbers = num => isNaN(num) ? "NaN" : (`${Math.abs(num)}`.match(/[02468]+|[13579]/g) || []).join("-");
+const dashOddNumbers = num => `${Math.abs(num)}`.split(/(?<=[13579])|(?=[13579])/g).join("-");
 
 console.log(dashOddNumbers(3465));
