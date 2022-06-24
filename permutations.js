@@ -9,7 +9,7 @@ function permutations(arr) {
         res.push(...ar);
     }
 
-    return res.filter((x,i) => res.indexOf(x) === i);
+    return res;
 }
 
 console.log(permutations([1, 2])); // [[1, 2], [2, 1]]
