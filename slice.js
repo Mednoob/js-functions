@@ -5,7 +5,7 @@ function slice(arr, start, end) {
     const res = [];
 
     for (let n = ind(start); n < ind(end); n++) {
-        if (Object.hasOwn(arr, n)) res.push(arr[n]);
+        if (arr.hasOwnProperty(n)) res.push(arr[n]);
     }
 
     return res;
