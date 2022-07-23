@@ -6,7 +6,7 @@ function sortNumArr(arr) {
 
     for (const item of arr) {
         let index = res.length - 1;
-        while (index > -1 && arr[index] > item) --index;
+        while (index > -1 && res[index] > item) --index;
         res.splice(index + 1, 0, item)
     }
 
