@@ -1,4 +1,4 @@
-// Nearest multiply of `exp` from `num`
+// Nearest multiply of `a` from `b`
 
 function nearestMultiply(a, b) {
     return Math.max(Math.round(b / a), 1) * a;
