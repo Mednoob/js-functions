@@ -47,7 +47,7 @@ function toIndonesianNumber(number) {
     if (number === 11) return "sebelas";
 
     const numstr = number.toString();
-    if (numstr.length === 1) return nums[numstr];
+    if (numstr.length === 1) return `${str}${nums[numstr]}`;
     if (numstr.startsWith("1") && numstr.length === 2) return `${nums[`${number - 10}`]} belas`
 
     const puluh = numstr.length === 2;
