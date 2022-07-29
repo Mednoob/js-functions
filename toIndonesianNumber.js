@@ -25,6 +25,7 @@ function toIndonesianNumber(number) {
         str += "minus ";
         number *= -1;
     }
+    if (number > Number.MAX_VALUE) return `${str}tak terbatas`;
 
     if (number >= 1000) {
         for (let n = 0; n < ths.length; n++) {
