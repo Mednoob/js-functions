@@ -43,12 +43,12 @@ function toIndonesianNumber(number) {
     }
 
     if (number < 1) return str.trim();
-    if (number === 10) return "sepuluh";
-    if (number === 11) return "sebelas";
+    if (number === 10) return `${str}sepuluh`;
+    if (number === 11) return `${str}sebelas`;
 
     const numstr = number.toString();
     if (numstr.length === 1) return `${str}${nums[numstr]}`;
-    if (numstr.startsWith("1") && numstr.length === 2) return `${nums[`${number - 10}`]} belas`
+    if (numstr.startsWith("1") && numstr.length === 2) return `${str}${nums[`${number - 10}`]} belas`
 
     const puluh = numstr.length === 2;
     const div = puluh ? 10 : 100;
