@@ -12,7 +12,7 @@ function factorial(n) {
 // n = amount of items in set
 // r = amount of items selected from the set
 function permutationPossibilities(n, r = n) {
-    return factorial(n) / (r >= n ? 1 : factorial(n - r));
+    return factorial(n) / factorial(n - r);
 }
 
 console.log(permutationPossibilities(4, 2)); // 12
