@@ -8,7 +8,7 @@ function dfaStates(num, base = 2) {
 
     for (let n = 0; n < num * base; n++) {
         const k = `${Math.floor(n / base)}`;
-        if (!obj[k]) obj[`${k}`] = {};
+        if (!obj[k]) obj[k] = {};
 
         obj[k][`${n % base}`] = `${x}`;
         x = ++x % num;
